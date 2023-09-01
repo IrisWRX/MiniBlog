@@ -113,8 +113,6 @@ const ThreadCard = ({
         </div>
       </div>
 
-      {console.log(community)}
-
       {!isComment && community && (
         <Link
           href={`/communities/${community.id}`}
