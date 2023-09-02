@@ -67,7 +67,7 @@ export async function fetchUserPosts(userId: string) {
       model: Thread,
       populate: [
         {
-          path: "communities",
+          path: "community",
           model: Community,
           select: "name id image _id",
         },
@@ -82,7 +82,6 @@ export async function fetchUserPosts(userId: string) {
         },
       ],
     });
-
     return threads;
   } catch (error: any) {
     throw new Error(`Failed to fetch user posts: ${error.message}`);
@@ -125,7 +124,7 @@ export async function fetchUsers({
       ];
     }
 
-    // sorOptions is an object with key-value pairs
+    // sortOptions is an object with key-value pairs
     const sortOptions = { createdAt: sortBy };
 
     const usersQuery = User.find(query)

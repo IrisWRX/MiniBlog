@@ -1,4 +1,4 @@
-import { fetchUser } from "@/lib/actions/user.actions";
+import { fetchUser, fetchUsers } from "@/lib/actions/user.actions";
 import { currentUser } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 import { fetchCommunities } from "@/lib/actions/community.actions";
