@@ -14,8 +14,6 @@ MiniBlog is a text-based social sharing web application inspired by Threads.
 
 ## Getting Started
 
-### Installation
-
 To set up MiniBlog locally, follow these steps:
 
 1. Clone the repository to your local machine:
