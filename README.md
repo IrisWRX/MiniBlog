@@ -2,7 +2,7 @@
 
 ## Introduction
 
-MiniBlog is a text-based social sharing web application inspired by Threads. 
+MiniBlog is a text-based social sharing web application inspired by Threads. It is created with React, Next.js, TypeScript, MongoDB, Tailwind CSS, Clerk, and shadcn/ui.
 
 ## Features
 
