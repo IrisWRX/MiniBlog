@@ -1,34 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MiniBlog
+
+## Introduction
+
+MiniBlog is a text-based social sharing web application inspired by Threads. 
+
+## Features
+
+- Create threads
+- Comment on threads
+- Search thread creators
+- Community management
+- Activity tracking
 
 ## Getting Started
 
-First, run the development server:
+### Installation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+To set up MiniBlog locally, follow these steps:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone the repository to your local machine:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   ```bash
+   git clone https://github.com/IrisWRX/MiniBlog.git
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Change into the project directory:
 
-## Learn More
+   ```bash
+   cd MiniBlog
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Install the dependencies using npm:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm i
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. Create a Clerk account and set up a project named "MiniBlog".
 
-## Deploy on Vercel
+5. Select Next.js and obtain your API key.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+6. Create a .env file in the project root and add the following necessary environment variables:
+   ```
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+   CLERK_SECRET_KEY=
+   NEXT_CLERK_WEBHOOK_SECRET=
+   NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+   NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+   NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/onboarding
+   NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   MONGODB_URL=
+
+   UPLOADTHING_SECRET=
+   UPLOADTHING_APP_ID=
+   ```
+
+7. After you have installed the dependencies, you can start the development server:
+   ```bash
+   npm run dev
+   ```
+   This will launch the development server, and you can access the application by visiting http://localhost:3000 in your web browser.
